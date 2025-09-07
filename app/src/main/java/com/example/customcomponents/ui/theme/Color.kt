@@ -1,5 +1,6 @@
 package com.example.customcomponents.ui.theme
 
+import android.R
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
@@ -27,6 +28,19 @@ val LightColor2 = Color(0xFF626F88)
 
 val GreyColor= Color(0xFF414D66)
 
+val Magic1=Color(0xFF59C173)
+val Magic2=Color(0xFFa17fe0)
+val Magic3=Color(0xFF5d26c1)
+
+val RelaxingRed1=Color(0xFFfffbd5)
+val RelaxingRed2=Color(0xFFb20a2c)
+
+val Sun1=Color(0xFFC6FFDD)
+val Sun2=Color(0xFFFBD786)
+val Sun3= Color(0xFFf7797d)
+
+val CompareNow= Color(0xFFEF3B36)
+
 val GreenGradient= Brush.linearGradient(
     listOf(
         Green300,
@@ -41,3 +55,33 @@ val DarkGradient= Brush.verticalGradient(
         DarkColor
     )
 )
+
+val MagicGradient= Brush.verticalGradient(
+    colors = listOf(
+        Magic1,
+        Magic2,
+        Magic3
+    )
+)
+val RelaxingRedGradient= Brush.verticalGradient(
+    colors = listOf(
+        RelaxingRed1,
+        RelaxingRed2
+    )
+)
+fun sunGradient(radius: Float)= Brush.radialGradient(
+    colors = listOf(
+        Sun1,
+        Sun2,
+        Sun3
+    ),
+    radius=radius
+)
+
+val CompareNowGradient= Brush.verticalGradient(
+    colors = listOf(
+        CompareNow,
+        Color.White
+    )
+)
+
