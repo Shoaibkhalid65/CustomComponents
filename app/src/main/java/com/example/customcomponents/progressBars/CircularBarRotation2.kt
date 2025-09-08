@@ -20,6 +20,8 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.customcomponents.ui.theme.CompareNowGradient
+import com.example.customcomponents.ui.theme.MagicGradient
+import com.example.customcomponents.ui.theme.RelaxingRedGradient
 
 @Preview(showBackground = true)
 @Composable
@@ -42,10 +44,10 @@ fun CircularBarRotation2() {
             for (i in 0..360 step 30) {
                 Box(
                     modifier = Modifier
-                        .height(50.dp)
+                        .height(20.dp)
                         .width(100.dp)
                         .rotate(i.toFloat())
-                        .padding(start = 50.dp)
+                        .padding(start =80.dp)
                 ) {
                     Box(
                         modifier = Modifier
@@ -53,7 +55,7 @@ fun CircularBarRotation2() {
                             .rotate(rotation.value)
                             .background(
                                 brush = CompareNowGradient,
-                                shape = RoundedCornerShape(8.dp)
+                                shape = RoundedCornerShape(16.dp)
                             )
                     )
                 }
