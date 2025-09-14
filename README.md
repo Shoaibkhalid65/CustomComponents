@@ -1,7 +1,7 @@
 # ⏱️ Speed Meter
 
 A **custom Speed Meter gauge** built entirely using **Jetpack Compose Canvas**.
-The project demonstrates how to draw and animate a **speedometer UI** with arcs, ticks, labels, and a smoothly animated needle using the **low-level `Animatable` API**.
+The project demonstrates how to draw and animate a **speedometer UI** with arcs, ticks, labels, and a smoothly animated needle using the **low-level `Animatable` API**
 
 ---
 
